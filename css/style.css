@@ -1,0 +1,29 @@
+h1{
+	color:white;
+}
+body{
+	background-color:#101010;
+	color:white;
+}
+.mainbox{
+		color:rgba(255,255,255,0.8);
+}
+.mainbox:hover{
+		color:rgba(255,255,255,1);
+}
+.project:hover{
+ background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #f35 0%,
+    #43e 100%
+  );
+  /*radial-gradient(0,50,#00000000 10px, #000000ee 350px)*/
+}
+.containers{
+  /*background-color:rgba(0,0,0,0.8);*/
+}
+
+.footerstyle{
+	background-color:black;
+	color:white;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampXtreme</title>
+    <!--Fontawesome para iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">    
+    <!-- Mi CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/faviconcamp.ico">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</script>
+</head>
+<body>
+    <header>
+        <h1>CampXtreme - Outdoor & Adventure Store</h1>
+    </header>
+    <main>
+    <div class="vistaAnimaciones"><span></span><i class="fa "></i></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark myNavbar">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto/">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acercade/">Acerca de</a>
+        </li>
+      </ul>
+      <form  id="formBusqueda"class="form-inline formBusqueda">
+        <input id="campoBusqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+      </form>
+      <i class="fa fa-microphone" id="microfono" onclick="start()"></i>
+      <div class="dropdown">
+        <button class="dropbtn">Categorias</button>
+        <div  class="dropdown-content">
+            <a href="#" class="categoria" filter="1">Accesorios</a>
+            <a href="#" class="categoria" filter="2">Botellas</a>
+            <a href="#" class="categoria" filter="3">Bultos</a>
+            <a href="#" class="categoria" filter="4">Guantes</a>
+            <a href="#" class="categoria" filter="5">Tiendas de Acampar</a>
+            <a href="#" class="categoria" filter="6">Zapatos</a>
+            <a href="#" class="categoria" filter="7">Todo</a>
+        </div>
+      </div>
+    </div> 
+    <i id="btnCarrito" class="fa fa-shopping-cart" alt="Agregar al Carrito"></i>
+</nav>
+  <br/>
+        <div id="contenedorPrincipal" class="container-fluid">
+         
+        </div>
+
+        <div id="modalcarrito" class="modalCarrito">
+            <div class="centered">
+                <div>
+                <span><b>Carrito de Compras</b></span>
+                <i class="fa fa-close closeicon"></i>
+              </div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tablaCarrito">
+                      <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                  <div><b>Total a Pagar:</b><span id="montoTotal"></span></div>
+                  <button id="btnVaciarCarrito">Vaciar Carrito</button>
+                  <button id="btnIrPago">Ir al Pago</button>
+            </div>
+           
+        </div>
+
+
+        <div id="modalOfertas" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">NUEVAS OFERTAS!</h5>
+                <button type="button" class="modalclose" data-dismiss="modalOfertas" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img id="slider" class="d-block w-100" src="img/productos/bootswoman1.jpg" alt="First slide">
+                      <div>
+                        <h5 id="priceSlider"></h5>
+                      </div>
+                    </div>
+              
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button  type="button" class="btn btn-secondary modalclose" data-dismiss="modalOfertas">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modalPago" class="modal modalPago" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Pagar productos</h5>
+                <button type="button" class="modalclose1" data-dismiss="modalPago" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body cuerpomodal">
+                <h5>Total: <span id="totalPagar"></span></h5>
+                <label for="money">Convertir tipo de cambio a:</label>
+                <select name="money" id="exchange">
+                  <option value="usd">Dolar USA(USD)</option>
+                  <option value="euro">Euro(EUR)</option>
+                  <option value="colones">Colones(CRC)</option>
+                  <option value="pesoArg">Peso Argentino</option>
+                  <option value="pesoMex">Peso Mexicano</option>
+                  <option value="dolarCan">Dolar Canadiense</option>
+                </select>
+                <iframe src="codigoTerceros/index.html" height="100%" width="100%" title="Card"></iframe>
+              </div>
+              <div class="modal-footer">
+                <button  type="button" id="paybutton" class="btn btn-primary">Pagar</button>
+                <button  type="button" class="btn btn-secondary modalclose1" data-dismiss="modalPago">Cerrar</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <p>Derechos Reservados, XcampStore 2022</p>
+        <a href="https://www.linkedin.com/in/deiby-picado-3b59ab147/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <p>Desarrollado por Deiby Picado</p>
+    </footer>
+     <!-- BOOTSTRAP -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <!-- SWEET ALERT-->
+    
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify-->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Mis Script-->
+    <script src="js/script.js"></script>
+    <script src="js/voicesearch.js"></script>
+    <script src="js/moneyExchange.js"></script>
+</body>
+</html>
