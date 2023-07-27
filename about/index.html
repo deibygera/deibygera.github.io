@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  
@@ -25,6 +25,7 @@
   </style>
    <script src="js/vanta.r134.min.js"></script>
 <script src="js/vanta.net.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
 </head>
 <body>
 
@@ -52,13 +53,36 @@
   </div>
 </nav>
 
-<div id="backg" class="jumbotron mainbox" >
+<div id="backg" class="jumbotron mainbox titleabout" >
   <div   class="container text-center">
-    <h1>Section Under Construction</h1>      
-    <p>Sorry for the inconvenience..</p>
+    <h1>Skills</h1>      
   </div>
 </div>
   
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-sm-6">
+<circle-progress class="circle-progress-js" value="70" max="100" ></circle-progress>
+<span><b>Javascript</b></span>
+</div>
+<div class="col-lg-3 col-sm-6">
+<circle-progress class="circle-progress-react" value="40" max="100"></circle-progress>
+<span><b>React</b></span>
+</div>
+<div class="col-lg-3 col-sm-6">
+<circle-progress class="circle-progress-python" value="60" max="100"></circle-progress>
+<span><b>Python</b></span>
+</div>
+<div class="col-lg-3 col-sm-6">
+<circle-progress class="circle-progress-html" value="90" max="100"></circle-progress>
+<span><b>HTML</b></span>
+</div>
+<div class="col-lg-3 col-sm-6">
+<circle-progress class="circle-progress-css" value="65" max="100"></circle-progress>
+<span><b>CSS</b></span>
+</div>
+</div>
+</div>
 
 <footer class="container-fluid text-center footerstyle">
   <p>All rights reserved - 2023</p>

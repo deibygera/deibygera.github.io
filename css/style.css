@@ -23,7 +23,33 @@ body{
   /*background-color:rgba(0,0,0,0.8);*/
 }
 
+
+.circle-progress-js::part(value){
+	stroke: hsla(37, 100%, 50%, 1) !important;
+}
+
+.circle-progress-react::part(value){
+	stroke: hsla(176, 100%, 50%, 1) !important;
+}
+.circle-progress-python::part(value){
+	stroke: hsla(207, 100%, 50%, 1) !important;
+}
+.circle-progress-css::part(value){
+	stroke: hsla(300, 100%, 50%, 1) !important;
+}
+.circle-progress-html::part(value){
+	stroke: hsla(133, 100%, 50%, 1) !important;
+}
+.titleabout{
+	color:white;
+	background-color:black;
+}
+
+
+
+
 .footerstyle{
 	background-color:black;
 	color:white;
 }
+
