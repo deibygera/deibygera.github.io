@@ -6,11 +6,13 @@ body{
 	color:white;
 }
 .mainbox{
+	background-color:black;
 		color:rgba(255,255,255,0.8);
 }
 .mainbox:hover{
 		color:rgba(255,255,255,1);
 }
+
 .project:hover{
  background-image: radial-gradient(
     farthest-corner at 40px 40px,
@@ -44,8 +46,19 @@ body{
 	color:white;
 	background-color:black;
 }
-
-
+.socialmedia img:hover{
+	width:98px;
+	height:98px;
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.socialmedia img:active{
+	width:93px;
+	height:93px;
+}
+.socialmedia h3{
+	color:white;
+}
 
 
 .footerstyle{
