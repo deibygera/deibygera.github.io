@@ -4,11 +4,11 @@
 <link href="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.10.111/web/pdf_viewer.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.10.111/build/pdf.min.js"></script>
 </head>
-<div id="page">
+<div id="the-canvas">
 	
 </div>
 <script rel="javascript">
-var page=document.getElementById("page");
+//var page=document.getElementById("page");
 //pdfjsLib.getDocument('Bela_English_Test.pdf');
 var loadingTask = pdfjsLib.getDocument('Bela_English_Test.pdf');
 loadingTask.promise.then(function(pdf) {
