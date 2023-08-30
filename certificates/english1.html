@@ -10,20 +10,14 @@
 <script rel="javascript">
 //var page=document.getElementById("page");
 //pdfjsLib.getDocument('Bela_English_Test.pdf');
-var loadingTask = pdfjsLib.getDocument('helloworld.pdf');
-loadingTask.promise.then(function(pdf) {
-
-	pdf.getPage(1).then(function(page) {
- 
-
-	var pdfjsLib = window['pdfjs-dist/build/pdf'];
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
 var loadingTask = pdfjsLib.getDocument('Bela_English_Test.pdf');
 loadingTask.promise.then(function(pdf) {
+pdf.getPage(1).then(function(page) {
   var scale = 1.5;
 var viewport = page.getViewport({ scale: scale, });
 // Support HiDPI-screens.
 var outputScale = window.devicePixelRatio || 1;
-
 var canvas = document.getElementById('the-canvas');
 var context = canvas.getContext('2d');
 
@@ -42,7 +36,6 @@ var renderContext = {
   viewport: viewport
 };
 page.render(renderContext);
-});
 		});
 
 });
