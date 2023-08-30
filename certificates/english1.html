@@ -20,7 +20,20 @@
 </div>
 
 <script src="https://unpkg.com/pdfjs-dist@latest/build/pdf.min.js"></script>
-<script src="./index.js"></script>
+<script>
+let currentPageIndex = 0;
+let pdfInstance = null;
+let totalPagesCount = 0;
+
+window.initPDFViewer = function (pdfURL) {
+	pdfjsLib.getDocument(pdfURL).then((pdf) => {
+		pdfInstance = pdf;
+		totalPagesCount = pdf.numPages;
+		initPager();
+		render();
+	});
+};
+</script>
 <script>
 	window.onload = () => {
 		initPDFViewer('Bela_English_Test.pdf');
