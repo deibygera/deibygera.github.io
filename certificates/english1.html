@@ -24,7 +24,7 @@
 let currentPageIndex = 0;
 let pdfInstance = null;
 let totalPagesCount = 0;
-
+let pdfURL="Bela_English_Test.pdf";
 window.initPDFViewer = function (pdfURL) {
 	pdfjsLib.getDocument(pdfURL).then((pdf) => {
 		pdfInstance = pdf;
