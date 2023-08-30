@@ -4,22 +4,11 @@
 <link href="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.10.111/web/pdf_viewer.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.10.111/build/pdf.min.js"></script>
 </head>
-<div id="app">
-	<div id="toolbar">
-		<div id="pager">
-			<button data-pager="prev">prev</button>
-			<button data-pager="next">next</button>
-		</div>
-		<div id="page-mode">
-			<label>
-				Page Mode
-				<input type="number" value="1" min="1" />
-			</label>
-		</div>
-	</div>
-	<div id="viewport" role="main"></div>
+<div id="page">
+	
 </div>
 <script rel="javascript">
+var page=document.getElementById("page");
 //pdfjsLib.getDocument('Bela_English_Test.pdf');
 var loadingTask = pdfjsLib.getDocument('Bela_English_Test.pdf');
 loadingTask.promise.then(function(pdf) {
