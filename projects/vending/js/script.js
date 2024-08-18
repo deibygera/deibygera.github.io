@@ -257,45 +257,16 @@ categorias.forEach((cat)=>{
         switch(cat.getAttribute("filter")){
             case "1":
                 productosFiltrados = productos.filter((element) => {
-                    return element.categoria=="accesorios";
+                    return element.categoria=="snacks";
                   });
                   mostrarProductos(productosFiltrados);
                 break;
             case "2":
                 productosFiltrados = productos.filter((element) => {
-                    return element.categoria=="botellas";
+                    return element.categoria=="bebidas";
                   });
                   mostrarProductos(productosFiltrados);
                 break;
-            case "3":
-                    productosFiltrados = productos.filter((element) => {
-                        return element.categoria=="bultos";
-                      });
-                      mostrarProductos(productosFiltrados);
-                    break;
-                    case "4":
-                        productosFiltrados = productos.filter((element) => {
-                            return element.categoria=="guantes";
-                          });
-                          mostrarProductos(productosFiltrados);
-                        break;
-                        case "5":
-                            productosFiltrados = productos.filter((element) => {
-                                return element.categoria=="tiendasdecampana";
-                              });
-                              mostrarProductos(productosFiltrados);
-                            break;
-
-                            case "6":
-                                productosFiltrados = productos.filter((element) => {
-                                    return element.categoria=="zapatos";
-                                  });
-                                  mostrarProductos(productosFiltrados);
-                                break;
-                                case "7":
-                               
-                                  mostrarProductos();
-                                break;
                             default:
                                 console.log("Error interno.")
                                 break;
