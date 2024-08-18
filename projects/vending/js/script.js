@@ -180,7 +180,7 @@ if(!filtro){
     contador=1;
     vistaProductos+=`<div class="row">`;
     for (const p of filtro){
-        let contenedorProducto=[`<div class="col">`,`<img src="${p.imagen}" /><br/>`,`<span><b>${p.nombre}</b></span><br/>`,`<span class="description"><b>Descripcion: </b>${p.descripcion}</span><br/>`,`<span><b>Precio: </b>$${p.precio}</span><br/>`,`<i codigo="${p.codigo}" class="fa fa-cart-plus agregarCarrito"></i></div>`];
+        let contenedorProducto=[`<div class="col">`,`<img src="${p.imagen}" /><br/>`,`<span><b>${p.nombre}</b></span><br/>`,`<span class="description"><b>Descripcion: </b>${p.descripcion}</span><br/>`,`<span><b>Precio: </b>₡${p.precio}</span><br/>`,`<i codigo="${p.codigo}" class="fa fa-cart-plus agregarCarrito"></i></div>`];
             contenedorProducto=[...contenedorProducto].join("");
         if(contador%6==0){
             vistaProductos+=`</div><div class="row">`;
