@@ -1,0 +1,48 @@
+
+html,body{
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+#optionsdiv{
+  position: fixed;
+  width: 100%;
+  z-index: 96;
+  height: 30px;
+  background-color: rgba(0,0,0,0.5);
+}
+#optionsdiv label{
+  color:white;
+}
+.maincontainer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150,20,150,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer h2{
+  font-size: 10em;
+  margin:0 auto;
+  color: white;
+}
+.maincontainer h3{
+  font-size: 2.5em;
+  margin:0 auto;
+  color: white;
+}
+#initialContainer{
+  position: absolute;
+  display: flex;
+  background-color:rgba(0,0,0,0.5); 
+  width: 100vw;
+  height: 100%;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+}
+#startButton{
+  font-size: 2em;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Listen to the French Alphabet">
+    <meta name="tags" content="french,learn,listen,synthesis">
+    <title>French Alphabet</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="optionsdiv">
+      <label for="velocity">Velocidad</label>
+      <input type="range" id="velocity" name="velocity" min="1000" max="5000">
+    </div>
+    <div id="initialContainer">
+        <button id="startButton">Start</button>
+    </div>
+    <div class="maincontainer">
+      <h2 id="letter"></h2>
+      <h3 id="pronunciation"></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: aquamarine;
+}
+* {
+    box-sizing: border-box;
+}
+/* Tooltip container */
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: fixed;
+  z-index: 1;
+ right:0;
+  top:8%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+}
+.optionsbar{
+  display: fixed;
+  background-color: rgba(0,0,0,0.4);
+  height: 30px;
+  width:100% ;
+}
+.mainScreen{
+  margin-bottom: 0;
+    width: 100%;
+    height: 100vh;
+     max-height: 100%;
+  border: solid 1px gray;
+}
+#soundIcon{
+  position: fixed;
+  font-size: 30px !important;
+  color: white;
+}
+.helpicon{
+  position: fixed;
+  color: white;
+  font-size: 30px !important;
+  right: 0;
+  top:0;
+}
+
+#soundIcon:hover{
+  position: fixed;
+  font-size: 30px !important;
+  color: purple;
+}
+#soundIcon:active{
+  position: fixed;
+  font-size: 24px !important;
+  color: purple;
+}
+.helpicon:hover{
+  position: fixed;
+  font-size: 30px !important;
+  right: 0;
+  color:purple;
+}
+.helpicon:active{
+  position: fixed;
+  font-size: 24px !important;
+  right: 0;
+  color:purple;
+}
+.gameButtonsContainer{
+  position: fixed;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+ background-color: rgba(0,0,0,0.5);
+
+}
+#wordContainer{
+    color:blueviolet;
+    font-size: 70px;
+    text-align: center;
+}
+#user-answer{
+  margin-top:10%;
+  background-color: rgba(255,255,255,0.5);
+  width: 50%;
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  border-color:yellow yellow yellow yellow;
+}
+.checkicon{
+  position: relative;
+  top: 5px;
+  font-size: 45px !important;
+  margin-top: 30px;
+  color:greenyellow;
+}
+.checkicon:hover{
+  position: relative;
+  top: 5px;
+  font-size: 45px !important;
+  margin-top: 30px;
+  color:beige;
+}
+.checkicon:active{
+  position: relative;
+  top: 5px;
+  font-size: 35px !important;
+  margin-top: 30px;
+  color:beige;
+}
+#user-answer:hover{
+  margin-top:10%;
+  background-color: rgba(255,255,255,0.5);
+  width: 50%;
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  border-color:purple;
+}
+.box{
+   visibility: hidden;
+  position: fixed;
+  color:white;
+  text-align: center;
+  top: 35%;
+left: 50%;
+width: 300px;
+height: 100px;
+margin-top: -50px; /* Negative half of height. */
+margin-left: -150px; /* Negative half of width. */
+   background-color: gray;
+   z-index: 99;
+}
+
+#message{
+   position: relative;
+     margin: 0;
+     top: 50%;
+     font-size: 40px;
+}
+.animationbox{
+  animation-name: appear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+#messageboxicon{
+  margin:0;
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+}
+@keyframes appear{
+   from{
+     background-color: rgba(0,0,0,0.2);
+      opacity: 0.5;
+      visibility: visible;
+   }
+   to{
+     background-color: rgba(0,0,0,0.2);
+     opacity:1;
+     visibility: visible;
+   }
+}
+@media screen and (max-width: 600px) {
+  #wordContainer{
+    color:blueviolet;
+    font-size: 60px;
+    text-align: center;
+}
+}
+@media screen and (min-width: 1000px) {
+  #wordContainer{
+    color:blueviolet;
+    font-size: 100px;
+    text-align: center;
+}
+}

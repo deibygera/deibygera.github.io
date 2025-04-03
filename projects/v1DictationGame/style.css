@@ -1,0 +1,204 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #73dce6;
+}
+* {
+    box-sizing: border-box;
+}
+.optionsbar{
+  display: fixed;
+  background-color: rgba(0,0,0,0.4);
+  height: 40px;
+  width:100% ;
+}
+.levelselect, .languageselection{
+  color:white;
+}
+.mainScreen{
+  margin-bottom: 0;
+    width: 100%;
+    height: 100vh;
+     max-height: 100%;
+  border: solid 1px gray;
+}
+.helpicon{
+  position: fixed;
+  color: white;
+  font-size: 30px !important;
+  right: 0;
+  top:0;
+}
+.startMessage{
+  position: absolute;
+  visibility: visible;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  text-align: center;
+  z-index: 999;
+}
+.startMessage button{
+  margin-top: 20%;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  border: solid black 1px;
+  color:white;
+  background-color: salmon;
+}
+.startMessage button:hover{
+  color:white;
+  border: solid yellow 1px;
+  background-color: blueviolet;
+}
+.startMessage button:active{
+  color:white;
+  border: solid red 1px;
+  background-color: blueviolet;
+  width: 295px;
+  height: 45px;
+}
+
+.helpicon:hover{
+  position: fixed;
+  font-size: 30px !important;
+  right: 0;
+  color:purple;
+}
+.helpicon:active{
+  position: fixed;
+  font-size: 24px !important;
+  right: 0;
+  color:purple;
+}
+.mainTitle{
+  display: table;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+.gameButtonsContainer{
+  position: fixed;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+ background-color: rgba(0,0,0,0.5);
+
+}
+#earIcon{
+    color:blueviolet;
+    font-size: 90px;
+    text-align: center;
+    display: block;
+    margin-top:20px;
+}
+#earIcon:hover{
+    color:rgb(175, 116, 231);
+}
+#earIcon:active{
+    font-size: 65px;
+}
+#user-answer{
+  margin-top:10%;
+  background-color: rgba(255,255,255,0.5);
+  width: 50%;
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  border-color:yellow yellow yellow yellow;
+}
+.checkicon{
+  position: relative;
+  top: 5px;
+  font-size: 45px !important;
+  margin-top: 30px;
+  color:greenyellow;
+}
+.checkicon:hover{
+  position: relative;
+  top: 5px;
+  font-size: 45px !important;
+  margin-top: 30px;
+  color:beige;
+}
+.checkicon:active{
+  position: relative;
+  top: 5px;
+  font-size: 35px !important;
+  margin-top: 30px;
+  color:beige;
+}
+#user-answer:hover{
+  margin-top:10%;
+  background-color: rgba(255,255,255,0.5);
+  width: 50%;
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  border-color:purple;
+}
+.box{
+   visibility: hidden;
+  position: fixed;
+  color:white;
+  text-align: center;
+  top: 35%;
+left: 50%;
+width: 300px;
+height: 100px;
+margin-top: -50px; /* Negative half of height. */
+margin-left: -150px; /* Negative half of width. */
+   background-color: gray;
+   z-index: 99;
+}
+
+#message{
+   position: relative;
+     margin: 0;
+     top: 50%;
+     font-size: 40px;
+}
+.animationbox{
+  animation-name: appear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+#messageboxicon{
+  margin:0;
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+}
+@keyframes appear{
+   from{
+     background-color: rgba(0,0,0,0.2);
+      opacity: 0.5;
+      visibility: visible;
+   }
+   to{
+     background-color: rgba(0,0,0,0.2);
+     opacity:1;
+     visibility: visible;
+   }
+}
+@media screen and (max-width: 600px) {
+  #wordContainer{
+    color:blueviolet;
+    font-size: 60px;
+    text-align: center;
+}
+}
+@media screen and (min-width: 1000px) {
+  #earIcon{
+    color:blueviolet;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+}

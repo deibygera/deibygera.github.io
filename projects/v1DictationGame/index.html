@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="description" content="Practice numerical dictation in different languages!">
+     <meta name="keywords" content="numbers,french,english,portuguese,learn,practice">
+    <title>Numerical Dictation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="startMessage" class="startMessage">
+      <button id="btn-start">START</button>
+
+    </div>
+<div id="messagebox" class="box">
+      <i id="messageboxicon" class="fa"></i>
+      <h2 id="message"></h2>
+    </div>
+    <!--<a href="menu.html">ver menu</a>-->
+   <div id="gameMainScreen" class="mainScreen">
+       <div class="optionsbar">
+         <label class="levelselect"for="levels">Level:</label>
+<select id="levels" name="levels">
+  <option value="easy">Easy (0-100)</option>
+  <option value="medium">Medium(100-999)</option>
+  <option value="hard">Hard(1,000-4,000,000)</option>
+</select>
+    <label class="languageselection" for="language">Language:</label>
+<select id="language" name="language">
+  <option value="en">English</option>
+  <option value="fr">French</option>
+  <option value="pt">Portuguese</option>
+</select>
+          <h1 class="mainTitle">Numerical Dictation Game</h1>
+          <i id="helpicon" class="fa fa-question-circle helpicon"></i>
+          
+       </div>
+            <i id="earIcon" class="fa fa-assistive-listening-systems"></i>
+              <div id="gameButtonsContainer" class="gameButtonsContainer">
+                  <input id="user-answer"type="number" placeholder="Answer" autocomplete="off"/><i id="checkicon" class="checkicon fa fa-check-square"></i>
+              </div>
+   </div>
+ 
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
