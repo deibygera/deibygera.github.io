@@ -9,44 +9,10 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-</script>
-		<script rel="javascript">
-var page=document.getElementById("page");
-var pdfjsLib = window['pdfjs-dist/build/pdf'];
-pdfjsLib.GlobalWorkerOptions.workerSrc ="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.js";
-var loadingTask = pdfjsLib.getDocument('Bela_English_Test.pdf');
-loadingTask.promise.then(function(pdf) {
-pdf.getPage(1).then(function(page) {
-  var scale = 1.5;
-var viewport = page.getViewport({ scale: scale, });
-// Support HiDPI-screens.
-var outputScale = window.devicePixelRatio || 1;
-var canvas = document.getElementById('the-canvas');
-var context = canvas.getContext('2d');
-
-canvas.width = Math.floor(viewport.width/2 * outputScale);
-canvas.height = Math.floor(viewport.height/2 * outputScale);
-canvas.style.width = Math.floor(viewport.width/2) + "px";
-canvas.style.height =  Math.floor(viewport.height/2) + "px";
-
-var transform = outputScale !== 1
-  ? [outputScale, 0, 0, outputScale, 0, 0]
-  : null;
-
-var renderContext = {
-  canvasContext: context,
-  transform: transform,
-  viewport: viewport
-};
-page.render(renderContext);
-		});
-
-});
 </script>
 	
   <style>
