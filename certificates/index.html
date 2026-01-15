@@ -13,7 +13,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-</script>
 	
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -131,7 +130,19 @@
 </div>
 </div>
 </div>
+	<script>
+document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tab => {
+  tab.addEventListener('shown.bs.tab', event => {
+    const target = document.querySelector(event.target.dataset.bsTarget);
+    const iframe = target.querySelector('iframe');
+    const src = event.target.getAttribute('data-src');
 
+    if (iframe && !iframe.src) {
+      iframe.src = src;
+    }
+  });
+});
+</script>
 <footer class="container-fluid text-center footerstyle">
   <p>Developed by Deiby Picado - All rights reserved - 2025</p>
 </footer>
