@@ -29,9 +29,6 @@
   </style>
 <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
 </head>
-<body>
-<button class="nav-link" data-bs-toggle="networking" data-bs-target="#software" data-src="">
-</button>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -87,6 +84,7 @@
     </button>
   </li>
 </ul>
+</div>
 
 <div class="tab-content mt-3">
   <div class="tab-pane fade show active" id="general">
@@ -115,47 +113,11 @@
 		  <iframe src="Bela_English_Test.pdf" width="100%" height="500px"></iframe>
 		<iframe src="english_efset_avanzado.pdf" width="100%" height="500px"></iframe>
 	</div>
-  </div>
-</div>
-		  
-		 
-		
-		  
-		 
-	  </div>
-  </div>
-</div>
+    </div>
   
-<div class="container-fluid">
-<div class="row">
-
-</div>
-</div>
-</div>
-	<script>
-document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tab => {
-  tab.addEventListener('shown.bs.tab', event => {
-    const target = document.querySelector(event.target.dataset.bsTarget);
-    const iframe = target.querySelector('iframe');
-    const src = event.target.getAttribute('data-src');
-
-    if (iframe && !iframe.src) {
-      iframe.src = src;
-    }
-  });
-});
-</script>
+		  
 <footer class="container-fluid text-center footerstyle">
   <p>Developed by Deiby Picado - All rights reserved - 2025</p>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
