@@ -50,70 +50,81 @@
     </div>
   </div>
 </nav>
-<div id="backg" class="jumbotron mainbox titleabout" >
-  <div   class="container text-center">
-    <h1>Certificates</h1>      
-	  <div>
-		<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <button class="nav-link active"
-            data-bs-toggle="tab"
-            data-bs-target="#general">
-		General
-    </button>
-  </li>
-  <li class="nav-item">
-    <button class="nav-link"
-            data-bs-toggle="tab"
-            data-bs-target="#networking">
-      Networking
-    </button>
-  </li>
-	<li class="nav-item">
-    <button class="nav-link"
-            data-bs-toggle="tab"
-            data-bs-target="#software">
-      Software & Programming
-    </button>
-  </li>
-			<li class="nav-item">
-    <button class="nav-link"
-            data-bs-toggle="tab"
-            data-bs-target="#Languages">
-      Languages
-    </button>
-  </li>
-</ul>
-</div>
-
-<div class="tab-content mt-3">
-  <div class="tab-pane fade show active" id="general">
-      <iframe src="CompTIA IT Fundamentals_ Basic IT Concepts.pdf" width="100%" height="500px"></iframe>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        General
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+    <iframe src="CompTIA IT Fundamentals_ Basic IT Concepts.pdf" width="100%" height="500px"></iframe>
 	      <iframe src="IT_Essentials.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="CompTIA Linux+_ Shells, Variables, & Configuration Files.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="HP_commercial_laptops.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="HP_motherboard.pdf" width="100%" height="500px"></iframe>
+	</div>
   </div>
-  <div class="tab-pane fade" id="networking">
-          <iframe src="ITN.pdf" width="100%" height="500px"></iframe>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+	  Networking
+	  </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+    <iframe src="ITN.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="SRWE.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="CCNA 2024_ Network Topologies and Media.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="CCNA 2024_ Overview of Networking Components.pdf" width="100%" height="500px"></iframe>
+	</div>
   </div>
-	<div class="tab-pane fade" id="software">
-		<iframe src="FreeCodeCampResponsiveWebDesign.pdf" width="100%" height="500px"></iframe>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Software
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    <iframe src="FreeCodeCampResponsiveWebDesign.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="JS_edteam.pdf" width="100%" height="500px"></iframe>
 		<iframe src="javascript_coderhouse.pdf" width="100%" height="500px"></iframe>
 		<iframe src="javascript_essentials_cisco.pdf" width="100%" height="500px"></iframe>
 		<iframe src="python_essentials_cisco.pdf" width="100%" height="500px"></iframe>
 		<iframe src="udemy_php_mysql.pdf" width="100%" height="500px"></iframe>
+	</div>
   </div>
-	<div class="tab-pane fade" id="languages">
-    <iframe src="VLA_english.pdf" width="100%" height="500px"></iframe>
+	 <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Languages
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+       <iframe src="VLA_english.pdf" width="100%" height="500px"></iframe>
 		  <iframe src="Bela_English_Test.pdf" width="100%" height="500px"></iframe>
 		<iframe src="english_efset_avanzado.pdf" width="100%" height="500px"></iframe>
 	</div>
-    </div>
+  </div>
+</div>
+
+	
+  <div class="tab-pane fade show active" id="general">
+     
+  </div>
+  <div class="tab-pane fade" id="networking">
+         
+  </div>
+	<div class="tab-pane fade" id="software">
+		
+  </div>
+	<div class="tab-pane fade" id="languages">
+ 
+	</div>
+    
   
 		  
 <footer class="container-fluid text-center footerstyle">
