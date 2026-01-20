@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*
+  Paleta de colores:
+    yellowgren, black, #808080
+*/
+html,body{
+  margin:0;
+  height: 100%;  
+}
+h1{
+  margin:0;
+  font-size: 25px;
+  font-family: 'Goldman', cursive;
+}
+
+header{
+  display:grid;
+  top:0;
+  background-color: black;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
+}
+
+.companytitle{
+ color:white;
+  grid-column-start:1 ;
+  grid-column-end: 2;
+  grid-row-start: 1 ;
+  grid-row-end: 3;
+}
+
+.main-navbar {
+  color:white;
+  grid-column-start:2 ;
+  grid-column-end: 3;
+  grid-row-start: 1 ;
+  grid-row-end: 3;
+
+}
+ul{
+  height: 100%;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch;
+  list-style: none;
+}
+li{
+  font-family: 'Montserrat', sans-serif;
+flex: 1 1 auto;
+/*border: 1px solid white;*/
+display: flex;
+justify-content: center;
+align-items: center;
+}
+a{
+  margin: 0 auto;
+  text-align: center;
+  color:white;
+ text-decoration: none;
+ 
+}
+a:hover{
+  color:#808080;
+}
+li:hover{
+  background: yellowgreen;
+  color:black;
+}
+.slider{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex: 1 1 auto;
+  height: 450px;
+}
+.textcontainer{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color:greenyellow;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+  left: 0;
+  top:75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.slider h3{
+  margin:0 auto;
+  font-size:30px;
+ 
+}
+.slider p{
+    
+    font-size:19px;
+    
+  
+}
+.imageview{
+  width:100%;
+  transition: filter 0.5s;
+}
+
+.imageview:active{
+  filter: grayscale(80%);
+}
+
+footer{
+  display: flex;
+  background-color:black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer div p{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+footer div i{
+  margin-top:1rem;
+  font-size: 30px !important;
+  color: rgb(255, 255, 255);
+}
+footer div i:hover{
+  font-size: 35px !important;
+  color: yellowgreen;
+}
+footer div i:active{
+  font-size: 25px !important;
+  color: yellowgreen;
+}
+@media screen and (max-width: 580px) {
+  h1{
+    font-size: 18px;
+  }
+  header{
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50% 50%;
+}
+.slider{
+  height: 250px;
+}
+.textcontainer{
+  
+  top:50%;
+
+}
+
+}
+.ray {
+  clip-path:polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
+  transition: 4s;
+transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%); 
+  position: fixed;
+  top: -30px;
+  left: 50%;
+  width: 500px;
+  height: 100px;
+  background: linear-gradient(0.25turn,rgba(255,255,0,0.7), rgba(255,255,100,0));
+  z-index:99;
+}
+
+
+.light1 {
+  animation-duration: 10s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+}
+
+.light2 {
+  animation-duration: 7s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  z-index:-99;
+}
+
+
+@keyframes wave {
+  0% {
+    --angle: 90deg;
+  }
+  
+  50% {
+    --angle: 110deg;
+  }
+  100% {
+    --angle: 60deg;
+  }
+}
