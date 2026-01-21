@@ -1,4 +1,3 @@
-
 // Simple music player
 // last edit 15-9-20
 /*  new songs:
