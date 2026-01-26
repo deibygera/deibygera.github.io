@@ -59,10 +59,13 @@ body{
 .socialmedia h3{
 	color:white;
 }
-
-
+.imgs{
+    width:250px;
+	height:250px;
+}
 .footerstyle{
 	background-color:black;
 	color:white;
 }
+
 
